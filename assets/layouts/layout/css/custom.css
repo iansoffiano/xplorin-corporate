@@ -1,0 +1,77 @@
+/* here you can put your own css to customize and override the theme */
+.page-header.navbar .page-logo .logo-default {
+    margin: 0.5em 0 0;
+}
+.logo-default {
+    height: 3.5rem;
+}
+
+.shortcuts {
+    padding: 1em;
+    display: block;
+    margin-bottom: 1em;
+}
+
+a.shortcuts {
+    color: #FFF;    
+    border-radius: 2px !important;
+    transition: background-color .2s ease-in-out;
+    -webikit-transition: background-color .2s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out;
+}
+
+a.shortcuts.blue {
+    background-color: #3598dc;
+}
+a.shortcuts.turqoise {
+    background-color: #32c5d2;
+    
+}
+a.shortcuts.amber {
+    background-color: #ffbe50;
+}
+
+a.shortcuts.purple {
+    background-color: #8E44AD;
+}
+
+a.shortcuts.magenta {
+    background-color: #d74799;
+}
+
+a.shortcuts.bluegrenish {
+    background-color: #60baae;
+}
+
+a.shortcuts:hover, a.shortcuts:focus {
+    text-decoration: none;
+    color: #FFF
+}
+
+a.shortcuts.blue:hover {
+    background-color: #2f8bc9;
+}
+
+a.shortcuts.turqoise:hover {
+    background-color: #2aa5b1;
+}
+
+a.shortcuts.amber:hover {
+    background-color: #daa345;
+}
+
+a.shortcuts.purple:hover {
+    background-color: #763392;
+}
+
+a.shortcuts.magenta:hover {
+    background-color: #b3357c;
+}
+
+a.shortcuts.bluegrenish:hover {
+    background-color: #489c91;
+}
+
+.shortcuts .shortcut-icon {
+    font-size: 2.5rem;
+}
