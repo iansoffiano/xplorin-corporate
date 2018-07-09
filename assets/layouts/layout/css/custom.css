@@ -8,12 +8,21 @@
     margin: 0.25rem !important;
 }
 
+
+/* .page-header.navbar {
+    background-color: #fefefe;
+} */
+
 .page-header.navbar .page-logo .logo-default {
     margin: 0.5em 0 0;
 }
 
 .logo-default {
     height: 3.5rem;
+}
+
+.page-content {
+    background-color: #fcfcfc;
 }
 
 .shortcuts {
@@ -162,4 +171,47 @@ a.btn-purple:focus {
     background-color: #774e99;
     border-color: #774e99;
     color: #FFFFFF;
+}
+
+
+/* enable absolute positioning */
+
+.inner-addon {
+    position: relative;
+}
+
+
+/* style glyph */
+
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+
+/* align glyph */
+
+.left-addon .glyphicon {
+    left: 0px;
+}
+
+.right-addon .glyphicon {
+    right: 0px;
+}
+
+
+/* add padding  */
+
+.left-addon input {
+    padding-left: 30px;
+}
+
+.right-addon input {
+    padding-right: 30px;
+}
+
+.table-report {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
 }
