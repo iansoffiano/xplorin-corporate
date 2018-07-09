@@ -1,7 +1,17 @@
 /* here you can put your own css to customize and override the theme */
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.m-1 {
+    margin: 0.25rem !important;
+}
+
 .page-header.navbar .page-logo .logo-default {
     margin: 0.5em 0 0;
 }
+
 .logo-default {
     height: 3.5rem;
 }
@@ -13,7 +23,7 @@
 }
 
 a.shortcuts {
-    color: #FFF;    
+    color: #FFF;
     border-radius: 2px !important;
     transition: background-color .2s ease-in-out;
     -webikit-transition: background-color .2s ease-in-out;
@@ -23,10 +33,11 @@ a.shortcuts {
 a.shortcuts.blue {
     background-color: #3598dc;
 }
+
 a.shortcuts.turqoise {
     background-color: #32c5d2;
-    
 }
+
 a.shortcuts.amber {
     background-color: #ffbe50;
 }
@@ -43,7 +54,8 @@ a.shortcuts.bluegrenish {
     background-color: #60baae;
 }
 
-a.shortcuts:hover, a.shortcuts:focus {
+a.shortcuts:hover,
+a.shortcuts:focus {
     text-decoration: none;
     color: #FFF
 }
@@ -74,4 +86,80 @@ a.shortcuts.bluegrenish:hover {
 
 .shortcuts .shortcut-icon {
     font-size: 2.5rem;
+}
+
+.feeds li {
+    padding: 0.75em 0.5em;
+}
+
+.news li .col1>.cont>.cont-col2>.desc {
+    margin-left: 4px;
+}
+
+.desc a {
+    color: #82949a;
+    font-weight: 600;
+}
+
+.transaction {
+    margin-bottom: 1em;
+}
+
+.transaction h4 {
+    font-weight: 700;
+}
+
+.transaction h3 {
+    margin-top: 10px;
+}
+
+.level {
+    display: block;
+    padding: calc(2em - 10px);
+    color: #ffffff;
+    margin-bottom: 1.5em;
+}
+
+.level .fa {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.level-1 {
+    background: #53d192;
+}
+
+.level-2 {
+    background: #ffd200;
+}
+
+.level-3 {
+    background: #e55957;
+}
+
+.btn-purple {
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+}
+
+a.btn-purple {
+    background-color: #8e65b0;
+    border-color: #8e65b0;
+    color: #FFFFFF;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+}
+
+a.btn-purple:hover,
+a.btn-purple:focus {
+    background-color: #774e99;
+    border-color: #774e99;
+    color: #FFFFFF;
+}
+
+.btn-purple:focus {
+    background-color: #774e99;
+    border-color: #774e99;
+    color: #FFFFFF;
 }
