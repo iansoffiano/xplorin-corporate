@@ -8,7 +8,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Metronic | Dashboard</title>
+    <title>Metronic | Report</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="" name="description" />
@@ -471,12 +471,11 @@
                             </form>
                             <!-- END RESPONSIVE QUICK SEARCH FORM -->
                         </li>
-                        <li class="nav-item start active">
-                            <a href="javascript:;" class="nav-link">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
                                 <!-- <i class="icon-home"></i> -->
                                 <i class="mdi mdi-home-outline mdi-18px" aria-hidden="true"></i>
                                 <span class="title">Dashboard</span>
-                                <span class="selected"></span>
                             </a>
                         </li>
                         <li class="heading">
@@ -563,12 +562,13 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item start active">
                             <a href="javascript:;" class="nav-link nav-toggle">
                                 <!-- <i class="fa fa-lightbulb-o"></i> -->
                                 <i class="mdi mdi-lightbulb-outline mdi-18px"></i>
                                 <span class="title">Extra</span>
                                 <span class="arrow"></span>
+                                <span class="selected"></span>
                             </a>
                             <ul class="sub-menu" style="display: none;">
                                 <li class="nav-item">
@@ -611,7 +611,7 @@
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
-                                <span>Dashboard</span>
+                                <span>Report</span>
                             </li>
                         </ul>
                         <div class="page-toolbar">
@@ -623,300 +623,108 @@
                         </div>
                     </div>
                     <!-- END PAGE BAR -->
-                    <!-- BEGIN PAGE TITLE-->
-                    <h1 class="page-title"> Dashboard
-                        <small>dashboard & statistics</small>
+                    <h1 class="page-title"> Extra
+                        <!-- <small>dashboard & statistics</small> -->
                     </h1>
-                    <!-- END PAGE TITLE-->
                     <!-- END PAGE HEADER-->
-                    <!-- BEGIN DASHBOARD STATS 1-->
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <a class="dashboard-stat dashboard-stat-v2 blue" href="#">
-                                <div class="visual">
-                                    <i class="fa fa-comments"></i>
-                                </div>
-                                <div class="details">
-                                    <div class="number">
-                                        <span data-counter="counterup" data-value="1349">0</span>
-                                    </div>
-                                    <div class="desc"> New Feedbacks </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <a class="dashboard-stat dashboard-stat-v2 red" href="#">
-                                <div class="visual">
-                                    <i class="fa fa-bar-chart-o"></i>
-                                </div>
-                                <div class="details">
-                                    <div class="number">
-                                        <span data-counter="counterup" data-value="12,5">0</span>M$ </div>
-                                    <div class="desc"> Total Profit </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <a class="dashboard-stat dashboard-stat-v2 green" href="#">
-                                <div class="visual">
-                                    <i class="fa fa-shopping-cart"></i>
-                                </div>
-                                <div class="details">
-                                    <div class="number">
-                                        <span data-counter="counterup" data-value="549">0</span>
-                                    </div>
-                                    <div class="desc"> New Orders </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <a class="dashboard-stat dashboard-stat-v2 purple" href="#">
-                                <div class="visual">
-                                    <i class="fa fa-globe"></i>
-                                </div>
-                                <div class="details">
-                                    <div class="number"> +
-                                        <span data-counter="counterup" data-value="89"></span>% </div>
-                                    <div class="desc"> Brand Popularity </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <!-- END DASHBOARD STATS 1-->
-                    <div class="row">
-                        <div class="col-md-7 col-sm-12">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <!-- BEGIN PORTLET-->
-                                    <div class="portlet light bordered">
-                                        <div class="portlet-title">
-                                            <div class="caption">
-                                                <i class="icon-bar-chart font-dark hide"></i>
-                                                <span class="caption-subject font-dark bold uppercase">Shortcut</span>
-                                                <span class="caption-helper">Go directly</span>
-                                            </div>
-                                        </div>
-                                        <div class="portlet-body">
-                                            <!-- <div id="site_statistics_loading">
-                                                <img src="../assets/global/img/loading.gif" alt="loading" /> </div>
-                                            <div id="site_statistics_content" class="display-none">
-                                                <div id="site_statistics" class="chart"> </div>
-                                            </div> -->
-                                            <div class="row">
-                                                <div class="col-md-4 text-center">
-                                                    <a class="shortcuts blue">
-                                                        <div class="shortcut-icon">
-                                                            <i class="fa fa-plane" aria-hidden="true"></i>
-                                                        </div>
-                                                        <div class="shortcut-label">
-                                                            <span>Flights</span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4 text-center">
-                                                    <a class="shortcuts turqoise">
-                                                        <div class="shortcut-icon">
-                                                            <i class="fa fa-bed" aria-hidden="true"></i>
-                                                        </div>
-                                                        <div class="shortcut-label">
-                                                            <span>Hotel</span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4 text-center">
-                                                    <a class="shortcuts amber">
-                                                        <div class="shortcut-icon">
-                                                            <i class="fa fa-train" aria-hidden="true"></i>
-                                                        </div>
-                                                        <div class="shortcut-label">
-                                                            <span>Train</span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4 text-center">
-                                                    <a class="shortcuts purple">
-                                                        <div class="shortcut-icon">
-                                                            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                                                        </div>
-                                                        <div class="shortcut-label">
-                                                            <span>News</span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4 text-center">
-                                                    <a class="shortcuts magenta">
-                                                        <div class="shortcut-icon">
-                                                            <i class="fa fa-users" aria-hidden="true"></i>
-                                                        </div>
-                                                        <div class="shortcut-label">
-                                                            <span>Customers</span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="col-md-4 text-center">
-                                                    <a class="shortcuts bluegrenish">
-                                                        <div class="shortcut-icon">
-                                                            <i class="fa fa-comments" aria-hidden="true"></i>
-                                                        </div>
-                                                        <div class="shortcut-label">
-                                                            <span>FAQ</span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- END PORTLET-->
-                                    <div class="portlet light bordered">
-                                        <div class="portlet-title">
-                                            <div class="caption">
-                                                <i class="icon-bar-chart font-dark hide"></i>
-                                                <span class="caption-subject font-dark bold uppercase">News</span>
-                                                <span class="caption-helper">Last updates</span>
-                                            </div>
-                                        </div>
-                                        <div class="portlet-body">
-                                            <div class="scroller" style="height: 200px;" data-always-visible="1" data-rail-visible="0">
-                                                <ul class="feeds news">
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col2">
-                                                                    <div class="desc">
-                                                                        <a href="">
-                                                                            TOP UP/PAYMENT ONLINE
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date"> Just now </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col2">
-                                                                    <div class="desc">
-                                                                        <a href="">
-                                                                            TOP UP DEPOSIT ONLINE
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date"> 2 mins</div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col2">
-                                                                    <div class="desc">
-                                                                        <a href="">
-                                                                            Fitur Online Payment
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date"> 36 mins</div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col2">
-                                                                    <div class="desc">
-                                                                        <a href="">
-                                                                            Reminder for ticket reservation
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date">Yesterday</div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="col1">
-                                                            <div class="cont">
-                                                                <div class="cont-col2">
-                                                                    <div class="desc">
-                                                                        <a href="">
-                                                                            Reminder for ticket reservation
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col2">
-                                                            <div class="date"> 2 days</div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-5 col-sm-12">
-                            <!-- BEGIN PORTLET-->
+                        <div class="col-sm-12">
                             <div class="portlet light bordered">
                                 <div class="portlet-title">
                                     <div class="caption">
-                                        <i class="icon-share font-red-sunglo hide"></i>
-                                        <span class="caption-subject font-dark bold uppercase">Extra Commission</span>
+                                        <i class="icon-bar-chart font-dark hide"></i>
+                                        <span class="caption-subject font-dark bold uppercase">Extra Customer</span>
+                                    </div>
+                                    <div class="actions">
+                                        <div class="btn-group">
+                                            <button type="submit" class="btn btn-primary">
+                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                Add Customer
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="portlet-body">
-                                    <div class="slog">
-                                        <h3 class="text-center font-weight-light">
-                                            " Increase your transaction to get more commissions from us "
-                                        </h3>
-                                    </div>
-                                    <hr>
-                                    <div class="transaction text-center">
-                                        <h4 class="m-0">
-                                            This month's transactions
-                                        </h4>
-                                        <h3 class="mt-1 text-muted">Rp 0.0</h3>
-                                        <p>Get Rp 0,0 to reach next level</p>
-                                    </div>
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="level level-1 text-center">
-                                                <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
-                                                <p class="m-0">LEVEL 1</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="level level-2 text-center">
-                                                <i class="fa fa-rocket fa-2x" aria-hidden="true"></i>
-                                                <p class="m-0">LEVEL 2</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="level level-3 text-center">
-                                                <i class="fa fa-trophy fa-2x" aria-hidden="true"></i>
-                                                <p class="m-0">LEVEL 3</p>
-                                            </div>
+                                        <div class="col-md-12">
+                                            <form action="" method="post" class="form">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="" class="control-label">Type</label>
+                                                            <select name="" id="" class="form-control">
+                                                                <option value="">Select Type</option>
+                                                                <option value="">Adult (12+)</option>
+                                                                <option value="">Child (2 - 12 years)</option>
+                                                                <option value="">Infant (0 - 23 months)</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="" class="control-label">Title</label>
+                                                            <select name="" id="" class="form-control">
+                                                                <option value="">Select Title</option>
+                                                                <option value="">Mr.</option>
+                                                                <option value="">Mrs.</option>
+                                                                <option value="">Ms.</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="" class="control-label">First Name</label>
+                                                            <input type="text" name="" class="form-control" id="" placeholder="e.g. John">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="form-group">
+                                                            <label for="" class="control-label">Passport</label>
+                                                            <div class="inner-addon right-addon">
+                                                                <i class="glyphicon glyphicon-qrcode"></i>
+                                                                <input placeholder="e.g. 213 123 113" class="form-control form-text" name="" value="" size="60" autocomplete="off" type="text">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="" class="control-label">Passport Expired</label>
+                                                            <div class="inner-addon right-addon">
+                                                                <i class="glyphicon glyphicon-calendar"></i>
+                                                                <input placeholder="Date Start" class="form-control form-text" name="submitted[CodePostal]" value="" size="60" maxlength="5" autocomplete="off" type="date">
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="" class="control-label">Last Name</label>
+                                                            <input type="text" name="" class="form-control" id="" placeholder="e.g. Statham">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-8 col-md-offset-2">
-                                            <a href="" class="btn btn-purple btn-block">Transaction Summary</a>
+                                    <div class="table-report">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <thead>
+                                                    <th>Date</th>
+                                                    <th>Description</th>
+                                                    <th>Total Price</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
+                                    <button class="btn btn-danger">
+                                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                        Export to PDF
+                                    </button>
+                                    <button class="btn btn-success">
+                                        <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                                        Export to Excel
+                                    </button>
                                 </div>
                             </div>
-                            <!-- END PORTLET-->
                         </div>
                     </div>
                 </div>
@@ -1476,7 +1284,8 @@
                                 </ul>
                                 <div class="inner-content">
                                     <button class="btn btn-success">
-                                            <i class="icon-settings"></i> Save Changes</button>
+                                        <i class="icon-settings"></i> Save Changes
+                                    </button>
                                 </div>
                             </div>
                         </div>
