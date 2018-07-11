@@ -8,7 +8,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Metronic | Report</title>
+    <title>Metronic | Transaction</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="" name="description" />
@@ -509,16 +509,17 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item start active">
                             <a href="javascript:;" class="nav-link nav-toggle">
                                 <!-- <i class="fa fa-tasks"></i> -->
                                 <i class="mdi mdi-pulse mdi-18px"></i>
                                 <span class="title">Transaction</span>
                                 <span class="arrow"></span>
+                                <span class="selected"></span>
                             </a>
                             <ul class="sub-menu" style="display: none;">
                                 <li class="nav-item">
-                                    <a href="./trans_flight.html" class="nav-link ">
+                                    <a href="#/dashboard/purchase_flight" class="nav-link ">
                                         <i class="fa fa-plane"></i>
                                         <span class="title">Flight</span>
                                     </a>
@@ -540,13 +541,12 @@
                         <li class="heading">
                             <h3 class="uppercase">Reporting & Extra</h3>
                         </li>
-                        <li class="nav-item start active">
+                        <li class="nav-item">
                             <a href="javascript:;" class="nav-link nav-toggle">
                                 <!-- <i class="fa fa-exclamation-circle"></i> -->
                                 <i class="mdi mdi-alert-circle-outline mdi-18px"></i>
                                 <span class="title">Report</span>
                                 <span class="arrow"></span>
-                                <span class="selected"></span>
                             </a>
                             <ul class="sub-menu" style="display: none;">
                                 <li class="nav-item">
@@ -611,7 +611,7 @@
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
-                                <span>Report</span>
+                                <span>Transaction</span>
                             </li>
                         </ul>
                         <div class="page-toolbar">
@@ -623,8 +623,8 @@
                         </div>
                     </div>
                     <!-- END PAGE BAR -->
-                    <h1 class="page-title"> Report
-                        <!-- <small>dashboard & statistics</small> -->
+                    <h1 class="page-title"> Transaction
+                        <small>Flight Transaction</small>
                     </h1>
                     <!-- END PAGE HEADER-->
                     <div class="row">
@@ -633,68 +633,138 @@
                                 <div class="portlet-title">
                                     <div class="caption">
                                         <i class="icon-bar-chart font-dark hide"></i>
-                                        <span class="caption-subject font-dark bold uppercase">Transaction Report</span>
+                                        <span class="caption-subject font-dark bold uppercase">Flight schedule reservation info</span>
                                     </div>
                                 </div>
                                 <div class="portlet-body">
-                                    <form action="" class="form">
-                                        <div class="row">
-                                            <div class="col-md-3 col-sm-4 col-xs-12">
-                                                <label class="control-label" for="edit-submitted-codepostal">Date Start <span class="form-required" title="Ce champ est requis.">*</span></label>
-                                                <div class="inner-addon right-addon">
-                                                    <i class="glyphicon glyphicon-calendar"></i>
-                                                    <input placeholder="Date Start" class="form-control form-text" name="submitted[CodePostal]" value="" size="60" maxlength="5" autocomplete="off" type="date">
+                                    <div class="tabbable-line">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active">
+                                                <a href="#booked_tab" data-toggle="tab">Booked</a>
+                                            </li>
+                                            <li>
+                                                <a href="#ticketed_tab" data-toggle="tab">Ticketed</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="booked_tab" class="tab-pane active">
+                                                <form action="" class="form">
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                                            <label class="control-label" for="edit-submitted-codepostal">Start Date<span class="form-required" title="Ce champ est requis.">*</span></label>
+                                                            <div class="inner-addon right-addon">
+                                                                <i class="glyphicon glyphicon-calendar"></i>
+                                                                <input placeholder="Date Start" class="form-control form-text" name="submitted[CodePostal]" value="" size="60" maxlength="5" autocomplete="off" type="date">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                                            <label class="control-label" for="edit-submitted-codepostal">Finish Date<span class="form-required" title="Ce champ est requis.">*</span></label>
+                                                            <div class="inner-addon right-addon">
+                                                                <i class="glyphicon glyphicon-calendar"></i>
+                                                                <input placeholder="Date Start" class="form-control form-text" name="submitted[CodePostal]" value="" size="60" maxlength="5" autocomplete="off" type="date">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="control-label" for="edit-submitted-passenger">Search by Passenger 
+                                                                    <span class="form-required" title="Ce champ est requis.">*</span>
+                                                                </label>
+                                                                <input type="text" name="" id="" class="form-control" placeholder="example : Sarah Llyana">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 col-sm-4 col-xs-12">
+                                                            <label for="" class="control-label">&nbsp;</label>
+                                                            <button class="btn btn-primary btn-block">Kirim</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <div class="table-report">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <th>Date</th>
+                                                                <th>Description</th>
+                                                                <th>Total Price</th>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
+                                                <button class="btn btn-danger">
+                                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                                    Export to PDF
+                                                </button>
+                                                <button class="btn btn-success">
+                                                    <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                                                    Export to Excel
+                                                </button>
                                             </div>
-                                            <div class="col-md-3 col-sm-4 col-xs-12">
-                                                <label class="control-label" for="edit-submitted-codepostal">Date End <span class="form-required" title="Ce champ est requis.">*</span></label>
-                                                <div class="inner-addon right-addon">
-                                                    <i class="glyphicon glyphicon-calendar"></i>
-                                                    <input placeholder="Date Start" class="form-control form-text" name="submitted[CodePostal]" value="" size="60" maxlength="5" autocomplete="off" type="date">
+                                            <div id="ticketed_tab" class="tab-pane">
+                                                <form action="" class="form">
+                                                    <div class="row">
+                                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                                            <label class="control-label" for="edit-submitted-codepostal">Start Date<span class="form-required" title="Ce champ est requis.">*</span></label>
+                                                            <div class="inner-addon right-addon">
+                                                                <i class="glyphicon glyphicon-calendar"></i>
+                                                                <input placeholder="Date Start" class="form-control form-text" name="submitted[CodePostal]" value="" size="60" maxlength="5" autocomplete="off" type="date">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3 col-sm-4 col-xs-12">
+                                                            <label class="control-label" for="edit-submitted-codepostal">Finish Date<span class="form-required" title="Ce champ est requis.">*</span></label>
+                                                            <div class="inner-addon right-addon">
+                                                                <i class="glyphicon glyphicon-calendar"></i>
+                                                                <input placeholder="Date Start" class="form-control form-text" name="submitted[CodePostal]" value="" size="60" maxlength="5" autocomplete="off" type="date">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                                            <div class="form-group">
+                                                                <label class="control-label" for="edit-submitted-passenger">Search by Passenger 
+                                                                            <span class="form-required" title="Ce champ est requis.">*</span>
+                                                                        </label>
+                                                                <input type="text" name="" id="" class="form-control" placeholder="example : Sarah Llyana">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 col-sm-4 col-xs-12">
+                                                            <label for="" class="control-label">&nbsp;</label>
+                                                            <button class="btn btn-primary btn-block">Kirim</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <div class="table-report">
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                                <th>Date</th>
+                                                                <th>Description</th>
+                                                                <th>Total Price</th>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                                                 </div>
+                                                <button class="btn btn-danger">
+                                                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                                    Export to PDF
+                                                </button>
+                                                <button class="btn btn-success">
+                                                    <i class="fa fa-file-excel-o" aria-hidden="true"></i>
+                                                    Export to Excel
+                                                </button>
                                             </div>
-                                            <div class="col-md-3 col-sm-4 col-xs-12">
-                                                <label class="control-label" for="edit-submitted-codepostal">Filter 
-                                                    <span class="form-required" title="Ce champ est requis.">*</span>
-                                                </label>
-                                                <select name="" id="" class="form-control">
-                                                    <option value="">Pilih Waktu</option>
-                                                    <option value="">Terbaru</option>
-                                                    <option value="">Terlama</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-3 col-sm-4 col-xs-12">
-                                                <label for="" class="control-label">&nbsp;</label>
-                                                <button class="btn btn-primary btn-block">Kirim</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                    <div class="table-report">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead>
-                                                    <th>Date</th>
-                                                    <th>Description</th>
-                                                    <th>Total Price</th>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
                                         </div>
                                     </div>
-                                    <button class="btn btn-danger">
-                                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-                                        Export to PDF
-                                    </button>
-                                    <button class="btn btn-success">
-                                        <i class="fa fa-file-excel-o" aria-hidden="true"></i>
-                                        Export to Excel
-                                    </button>
                                 </div>
                             </div>
                         </div>
