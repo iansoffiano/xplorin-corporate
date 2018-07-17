@@ -456,3 +456,39 @@ a.btn-purple:focus {
 .faq-content-1 .faq-section>.faq-content .panel-body>p:last-child {
     margin-bottom: 0;
 }
+
+.border-left-2 {
+    border-left: 2px solid #dedede;
+}
+
+.hotel-group .list-group-item-heading {
+    font-weight: 400;
+    color: #4e5a64;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #cccc;
+}
+
+.hotel-group .list-group-item-text {
+    margin-top: 1em;
+}
+
+.hotel-group .media>.image>img {
+    object-fit: cover;
+    max-height: 150px;
+    width: 100%;
+}
+
+.hotel-group .tripadvisor-rating {
+    max-width: 80px;
+    margin-top: 0.5em;
+}
+
+.old-price {
+    font-weight: 600;
+}
+
+.nta-price {
+    margin: 0.75em 0;
+    font-size: 1.25rem;
+    display: block;
+}
